@@ -1,0 +1,61 @@
+Typescript Swich
+    รับข้อมูลเข้ามา และทำการตรวจสอบว่า ข้อมูลเข้ากับกรณ๊ใดบ้าง
+    โดยจะมีชุดคำสั่งดังนี้
+        
+        switch (value) {
+            case condition:
+                statement;
+                break;
+            case condition:
+                statement;
+                break;
+            default:
+                statement;
+                break;
+        }
+
+    โดยถ้าหากข้อมูลที่ได้รับเข้ามา ไม่เข้ากับกรณ๊อะไรเลย
+    ชุดคำสั่งใน default จะถูกเรียกใช้งาน
+
+    break ใช้เพื่อหยุดการทำงานของชุดคำสั่ง switch statement เมื่อข้อมูลเข้ากับกรณ๊ที่ต้องการ
+    โดยถ้าหากไม่มีการใส่ break ตัว switch statement จะทำงานต่อไป
+
+    ตัวอย่างชุดคำสัง
+
+    const name: string = "bike";
+
+    switch (name) {
+        case "note"
+            console.log("update");
+            break;
+        case "bike"
+            console.log("add");
+            break;
+        default:
+            console.log("ignore");
+            break;
+    }
+
+    เราสามารถจัดกลุ่มของกรณ๊ที่มีชุดคำสั่งข้างในเหมือนกัน ให้อยู่ในกลุ่มเดียวกันได้ ทำให้ไม่ต้องเขียนชุดคำสั่งเดิมซ้ำ ๆ
+
+    switch (value) {
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+            statement;
+            break;
+        case 5: 
+        case 6:
+            statement;
+            break;
+        case 7:
+            statement;
+            break;
+        default:
+            statement;
+            break;
+    }
+
+    จากชุดคำสั่งดังกล่าว สมมุติให้ value = 3
+    ชุดคำสั่งของ case 4 จะถูกเรียกใช้งาน เนื่องจาก กรณีที่ 1,2,3,4 ต่างก็ใช้ชุดคำสั่งข้างในอันเดียวกัน
