@@ -55,6 +55,7 @@ Type Annotations
                                 10.3.1 ตัวอย่างการแปรงข้อมูล
                                     const posts: unknow = await fetct(url);
                                     (posts as {userId: number, id: number, title: string}[]).map()
+        11. void        หมายถึงไม่มีชนิดข้อมูลอะไรเลย มักใช้กับฟังก์ชันที่ไม่มีการส่งคืนข้อมูล
 
     Primitive data type
         เป็นชนิดข้อมูลดั้งเดิมของภาษา โดยจะมีดังนี้
