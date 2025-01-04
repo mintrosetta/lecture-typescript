@@ -56,6 +56,12 @@ Type Annotations
                                     const posts: unknow = await fetct(url);
                                     (posts as {userId: number, id: number, title: string}[]).map()
         11. void        หมายถึงไม่มีชนิดข้อมูลอะไรเลย มักใช้กับฟังก์ชันที่ไม่มีการส่งคืนข้อมูล
+        12. union       ทำให้ตัวแปรสามารถจัดเก็บได้หลายชนิดข้อมูล เช่น let a: number | string = "10"; ตัวแปร a จัดเก็บได้ทั้งตัวเลขและตัวอักษร
+        13. string literal  ทำให้ชนิดข้อมูลนั้น รับได้แค่คำที่ระบุไว้ใน string เช่น let click: 'click';
+                            13.1 click = 'click' จะไม่เกิดข้อผิดพลาด
+                            13.2 click = 'dbClick' จะเกิดข้อผิดพลาด
+                            13.3 โดยมักจะใช้เพื่อจัดกัดค่าของ string ที่เป็นไปได้ 
+                                13.3.1 เช่น let mouseEvenet: 'click' | 'dblClick' | 'mouseup' | 'mousedown'
 
     Primitive data type
         เป็นชนิดข้อมูลดั้งเดิมของภาษา โดยจะมีดังนี้
