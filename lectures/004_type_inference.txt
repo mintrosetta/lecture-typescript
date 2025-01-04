@@ -1,0 +1,15 @@
+Type Inference
+    เป็นการที่ typescript compiler จะทำการระบุชนิดของข้อมูลให้ โดยดูจากข้อมูลที่เรานำมาเก็บไว้ในตัวแปร
+    เช่น 
+        const a = 10;      // number 
+        const b = "Hello"; // string
+
+    โดยเมื่อข้อมูลนั้นเป็นแบบหลายรายการ (array) ตัว typescript compiler จะดูจากข้อมูลที่อยู่ด้านใน
+    เช่น const c = [10, 20, 30] ตัว typescript compiler จะระบุให้เป็น number[]
+
+    แต่ถ้ามีการใช้ข้อมูลหลายชนิดข้อมูล ตัว typescript compiler จะเพิ่มชนิดข้อมูลนั้นตามมา
+    เช่น const d = [10, 20, 30, null] จะได้เป็น number | null
+
+    ** | เป็นตัวดำเนินการหรือ (or) สำหรับชนิดข้อมูล
+
+    ** เราควรใช้ type annotations ให้่ได้มากที่สุด
