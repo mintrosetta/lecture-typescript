@@ -1,1 +1,10 @@
 Setup Environment
+    วิธีการจัดเตรียมสถาพแวดล้อมสำหรับเขียน typescript
+        1. ติดตั้ง nodejs
+        2. ติดตั้ง typescript compiler
+            2.1 ใช้คำสั่ง npm install -g typescript เพื่อติดตั้ง typescript compiler
+            2.2 ใช้คำสั่ง tsc -v เพื่อตรวจสอบ version ของ typescript compiler
+            2.3 ถ้าหากไม่ขึ้น version จากข้อ 2.2 ให้ทำการเพิ่ม Environment Variable
+        3. ติดตั้ง tsx module (ทำให้เราสามารถรันคำสั่งได้ โดยที่เราไม่ต้อง compile เป็น javascript ก่อน)
+            3.1 ใช้คำสั่ง npm install -g tsx
+        4. ติดตั้ง visual studio code
