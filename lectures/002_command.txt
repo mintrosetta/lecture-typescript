@@ -1,6 +1,0 @@
-
-    tsc <file.js>
-    จัดการแปรงชุดคำสั่ง typescript เป็น javascript
-
-    npm install --save-dev <dependency>
-    ติดตั้งโปรแกรมภายนอดในสภาพแวดล้อม dev
