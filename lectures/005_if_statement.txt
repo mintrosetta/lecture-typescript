@@ -1,0 +1,29 @@
+Typescript if else
+    ใช้สำหรับเขียนเงื่อนไขเพื่อควบคุมการทำงานของชุดคำสั่ง โดยหากเงื่อนไขของ if เป็นจริง ชุดคำสั่งที่อยู่ข้างใน if จะทำงาน
+
+    if (condition) {
+        if statement
+    }
+
+    และหากเงื่อนไขของ if เป็นเท็ต ชุดคำสั่งข้างใน else จะถูกเรียกใช้งานแทน
+
+    if (condition is false) {
+        if statement // not execute because condition is false
+    }
+    else {
+        else statement
+    }
+
+    เราสามารถย่อชุดคำสั่ง if else statement ลงได้ด้วยการใช้ ternary operator
+    ตัวอย่าง const result: boolean = (condition) ? if statement : else statement;
+
+    ถ้าเราต้องการเงื่อนไขหลายเงื่อนไข เพื่อทำการควบคุมชุดคำสั่ง เราสามารถทำได้ดังนี้
+    if (condition) {
+        if statement
+    } else if (condition) {
+        else if statement
+    } else if (condition) {
+        else if statement
+    } else {
+        
+    }
