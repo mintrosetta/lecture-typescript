@@ -1,0 +1,6 @@
+Generic class 
+    เป็นการระบุ generic type ในระดับคลาส
+    เช่น 
+        class ClassName<T> {
+            property: T;
+        }
