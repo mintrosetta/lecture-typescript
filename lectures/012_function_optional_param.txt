@@ -1,0 +1,13 @@
+Function optional parameter
+    ใน javascript การเรียกใช้งานฟังก์ชัน เราไม่จำเป็นจะต้องใส่ arguments ให้ครบอยู่แล้ว
+    แต่ว่าใร typescript ตัว compiler จะตรวจสอบทุก ๆ parameter ของ function 
+    ถ้าเราใส่ไม่ครบ จะเกิดข้อผิดพลาด
+
+    เราสามารถแก้ไขได้ โดยการใช้ optional parameter (เครื่องหมาย '?')
+
+    ตัวอย่างชุดคสั่ง
+        function name(parameter: type, parameter?: type): return_type {
+            statement
+        }
+
+    โดย parameter ที่เป็น optional จะทำให้เราไม่จำเป็นจะต้องใส่ argument ให้กับ parameter นั้นก็ได้
