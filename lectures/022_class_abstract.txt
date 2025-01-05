@@ -1,0 +1,23 @@
+Abstract class 
+    เป็นการที่บางพฤติกรรม จะมีการเขียนไว้ให้แล้ว แต่บางพฤติกรรมจะให้คลาสที่ทำการสืบทอดไปเขียนต่อเอง
+    โดยตัวมันเองจะไม่สามารถถูกนำไปสร้างเป็น instance ได้
+
+    ตัวอย่างชุดคำสั่ง
+        abstract class Name {
+
+        }
+
+    ตัวอย่างการใช้งาน 
+        abstract class Employee {
+            constructor() {
+
+            }
+
+            abstract getSalary(): number;
+
+            isEnable(): boolean {
+                return true;
+            }
+        }
+
+        จากตัวอย่างดังกล่าว getSalary จะเป็น abstract method ที่จะให้คลาสที่ทำการสืบทอดไป ไปเขียนความสามารถเพิ่มเติมเอาเอง
