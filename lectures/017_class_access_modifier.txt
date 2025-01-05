@@ -1,0 +1,32 @@
+Access Modifier (ระดับการเข้าถึง)
+    ใช้กำหนดว่าคุณสมบัติหรือพฤติกรรมภายในคลาส สามารถให้ภายนอกคลาสเรียกใช้ได้หรือไม่
+    โดยแบ่งเป็น 3 ประเภทดังนี้ 
+        1. private
+        2. protected
+        3. public
+
+    ** การควบคุมระดับการเข้าถึง จะเกิดขึ้นเฉพาะ compile time ไม่เกิดขึ้นตอน run time
+
+    private
+        ทำให้สามารถเรียกใช้งานได้เฉพาะภายในคลาสเดียวกัน
+
+    protected
+        สามารถเรียกใช้งานได้ภายในคลาสเดียวกัน หรือคลาสที่สืบทอดความสามารถไป
+
+    public 
+        สามารถเรียกใช้งานได้จากทุกที่
+
+    ตัวอย่างการใช้งาน
+        class User {
+            private userId: number;
+            private firstName: string;
+            private lastName: string;
+
+            contructor (userId: number, firstName: string, lastName: string) {
+                this.userId = userId;
+                this.firstName = firstName;
+                this.lastName = lastName;
+            }
+        }
+
+        จากคัวอย่างดังกล่าว ถ้าหากมีการเรียกใช้ส่วนที่เป็น private จากภายนอกจะเกิด error
