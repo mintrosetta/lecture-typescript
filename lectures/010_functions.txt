@@ -1,0 +1,26 @@
+Functions
+    เป็นการจัดกลุ่มของชุดคำสั่ง ซึ่งมีข้อดีคือ
+        1. อ่านง่าย
+        2. บำรุงรักษาได้
+        3. สามารถนำกลับมาใช้ซ้ำได้
+
+    ตัวอย่างชุดคำสั่ง
+        function name(parameter: type, parameter: type, ...): return_type {
+            statement
+        }
+
+    โดยสิ่งที่แตกต่างจาก javascript คือเราสามารถใช้ type annotation เพิ่อระบุชนิดข้อมูลที่จะรับเข้ามา
+    และจะส่งคืนกลับไป
+
+    ตัวอย่างการใช้งาน 
+        function add(a: number, b: number): number {
+            return a + b;
+        }
+
+    คำอธิบาย
+        เราได้สร้าง function add ขึ้นมา โดย parameter ระบุข้อมูลที่ถูกส่งเข้ามาจะต้องเป็น number 
+        โดยเมื่อ add ถูกเรียกใช้งาน typescript compiler จะทำการตรวจสอบว่า arguments ที่ส่งเข้ามาเป็น number ไหม
+        ถ้าไม่ใช่ จะทำการแจ้งเตือนข้อผิดพลาด
+
+    ** arguments ใช้เรียกข้อมูลที่จะส่งเข้าไปใน function
+    ** parameter ใช้เรียกข้อมูลที่ฟังก์ชันได้รับมา
