@@ -1,0 +1,24 @@
+Typescript Module
+    เมื่อเราเขียนชุดคำสั่ง typescript โดยปกติแล้วมันจะใช้ได้แค่ใน module ของมันเอง (ในไฟล์เดียวกัน)
+    เราสามารถส่งออกให้ module อื่น ๆ เรียกใช้งานได้ โดยการใช้ชุดคำสั่ง export
+    และ module อื่น ๆ สามารถใช้งานได้ด้วยชุดคำสั่ง import
+
+    ตัวอ่ยาง
+        a.ts 
+            interface Validator {
+
+            }
+
+            export { Validator };
+            เราสามารถเปลี่ยนชื่อตัวที่ถูกส่งออกได้
+            export { Validator as StringValidator }
+        
+        b.ts 
+            import { Validator } from './a.ts';
+
+            class EmailValidator implements Validator {
+
+            }
+
+    เราสามารถตั้ง export default ได้ โดยเมื่อ module นั้นถูกเรียกใช้ มันจะส่งคืน export นั้นโดยอัตโมมัติ
+    export default function test() {}
