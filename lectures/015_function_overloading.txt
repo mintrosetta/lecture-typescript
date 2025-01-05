@@ -1,0 +1,9 @@
+Function Overloading
+    เป็นการที่เรามีฟังก์ชันที่ชื่อเหมือนกัน แต่มี signature ที่แตกต่างกัน 
+    โดย signature ของฟังก์ชัน คือ 
+        1. parameter
+        2. return type
+
+    ตัวอย่างชุดคำสั่ง 
+        function add(a: number, b: number): number;
+        function add(a: string, b: string): string;
