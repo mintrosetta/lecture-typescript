@@ -1,0 +1,12 @@
+Function Types
+    แบ่งได้ออกเป็น 2 ส่วน คือ
+        1. parameter
+        2. return type
+
+    โดยเราสามารถให้ตัวแปรทการเก็บฟังก์ชันไว้ได้ ด้วยชุดคำสั่งดังนี้
+        let name: (parameter: type, parameter: type) => return_type;
+
+    ตัวอย่างการใช้งาน
+        let add: (a: number, b: number) => number;
+        จากชุดคำสั่งดังกล่าว หมายถึง ตัวแปร add จะจัดเก็บฟังก์ชัน โดยจะรับ parameter 2 ตัวเป็น number 
+        และจะส่งคืน number ออกมา
