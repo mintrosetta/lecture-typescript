@@ -1,0 +1,11 @@
+Read only
+    ทำให้คุณสมบัติไม่สามารถถูกเปลี่ยนแปรงข้อมูลได้ (immutable)
+
+    ตัวอย่างการใช้งาน 
+        class Person {
+            readonly birtDate: Date;
+
+            contructor (birtDate: Date) {
+                this.birtDate = birtDate;
+            }
+        }
