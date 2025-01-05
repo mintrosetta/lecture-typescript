@@ -1,0 +1,33 @@
+Typescript Classes
+    โดยปกติแล้ว javascript จะไม่มีแนวคิดเกี่ยวกับคลาส เหมือนกับ java, c#
+    แต่ว่า typescript ได้นำแนวคิดของคลาสมาใช้
+
+    ตัวอย่างชุดคำสั่ง
+        class Name {
+            property
+
+            constructor(parameter: type) {
+
+            }
+
+            functionName(): return_type {
+                statement
+            }
+        }
+
+    ตัวอย่างการใช้งาน
+        class User {
+            id: number;
+            username: string;
+            password: string;
+
+            constructor (id: number, username: string, password: string) {
+                this.id = id;
+                this.username = username;
+                this.password = parameter;
+            }
+
+            getFullName(): string {
+                return `${this.username}${this.password}`;
+            }
+        }
