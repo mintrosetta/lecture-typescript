@@ -1,0 +1,13 @@
+Type Assertion
+    ใช้สำหรับบอก compiler ว่าข้อมูลดังกล่าว มีชนิดข้อมูลว่าอะไร
+    ตัวอย่าง
+        const el = document.getElementById("d");
+
+    compiler จะยังไม่รู้ว่า el มีชนิดข้อมูลเป็นอะไร เราสามารถบอก compiler ได้ดังนี้
+        const el = document.getElementById("d") as HTMLInputElement;
+
+    หลังจากที่ compiler รู้ชนิดข้อมูลแล้ว จะทำให้มันตรวจสอบความถูกต้องให้กับเราได้
+
+    นอกจากการใช้ as แล้ว เรายังสามารถใช้ <> ได้ด้วย 
+    เช่น 
+        const el = <HTMLInputElement> document.getElementById("d");
