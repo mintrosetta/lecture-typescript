@@ -1,0 +1,35 @@
+Interface Extending
+    เป็นการสืบทอดคุณสมบัติจาก interface หนึ่งไปยังอีก interface หนึ่ง
+
+    จะใช้ในสถาณการณ์ไหน ?
+        สมมุติเรามี interface หนึ่งที่ใช้ในการส่งเมล
+            interface Mailable {
+                send(email: string): boolean;
+                quence(email: string): boolean;
+            }
+
+        โดย interface ดังกล่าว ถูกเขียนความสามารในคลาสอื่น ๆ ไปแล้ว
+
+        ต่อมาเราต้องการเพิ่มความสามารถเข้าไปใน interface 
+            interface Mailable {
+                send(email: string): boolean;
+                quence(email: string): boolean;
+                later(email: string, after: number): void;
+            }
+        การเพิ่มความสามารถดังกล่าวเข้าไป จะทำให้คลาสที่ทำการสืบทอดความสามารถไป ได้รับผลกระทบด้วย
+        เราไม่ต้องการมานั่งแก้ไขทุก ๆ คลาส จริงไหม ? :)
+        เราสามารถแยก interface ออกมาได้ และทำการสืบทอดคุณสมบัติจาก interface ที่ต้องการ 
+
+        interface FutureMailable extends Mailable {
+            later(email: string, after: number): void;
+        }
+
+    interface สามารถสืบทอดได้หลายอันด้วยนะ  
+    ตัวอย่าง  
+        interface A {}
+        interface B {}
+        interface C {}
+        interface D extends A, B, C {
+
+        }
+    จากตัวอย่าง จะทำให้ interface D ได้รับคุณสมบัติของ A, B, C
