@@ -1,0 +1,40 @@
+Interface 
+    ใช้เพื่อกำหนดว่า วัตถุดังกล่าวจะต้องมีคุณสมบัติอะไรบ้าง
+
+    ตัวอย่างการใช้งาน
+        เราต้องการรับ object หนึ่งเข้ามา โดยจะต้องมีคุณสมบัติเป็น firstName, lastName
+        เราสามารมารถเขียนได้กะงนี้
+            function getFullName(person: {
+                firstName: string,
+                lastName: string
+            }): string {
+                return person.firstName + person.lastName;
+            }
+
+            const person = {
+                firstName: 'Jhoin',
+                lastName: 'Doe'
+            }
+
+        แต่จากคำสั่งดังกล่าว อาจะทำให้ยากต่อการอ่านและการนำกลับมาใช้ใหม่ 
+        เราจึงจะกำหนดด้วย interface 
+            interface Person {
+                firstName: string;
+                lastName: string;
+            }
+
+        และเราสามารถนำ interface ไปกำหนดให้แบบ type annotation ได้
+            function getFullName(person: Person): string {
+                return person.firstName + person.lastName;
+            }
+
+        สามารถกำหนดความสามารถให้กับคลาสได้
+            interface Json {
+                toJson(): string;
+            }
+
+            class Person implements Json {
+                toJson(): string {
+                    return "";
+                }
+            }
