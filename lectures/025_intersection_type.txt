@@ -1,0 +1,27 @@
+Intersection Types
+    เป็นการสร้างชนิดข้อมูลขึ้นมาใหม่ โดยการรวมชนิดข้อมูลที่มีอยู่แล้วเข้าด้วยกัน
+    ตัวอย่าง 
+        type typeAB = typeA & typeB;
+    จากตัวอย่างดังกล่าว typeAB จะมีคุณสมบัติทั้งของ A และ B
+
+    ตัวอย่างการใช้งาน
+        interface Identity {
+            id: number,
+            name: string
+        }
+
+        interface Contact {
+            email: string,
+            phone: string
+        }
+
+        type User = Identity & Contact;
+
+    จากตัวอย่างดังกล่าว จะทำให้ User ได้รับคุณสมบัติจาก Identity และ Contact
+    กลายเป็น 
+        let u: User = {
+            id: 100,
+            name: "H",
+            email: "H@gmail.com",
+            phone: "0000000000"
+        }
