@@ -1,0 +1,17 @@
+Function Default Parameter
+    เป็นกานกำหยดช้อมูลเริ่มต้นให้กับ parameter ของ function ในกรณ๊ที่ไม่มีการส่งข้อมูลเข้าไป
+
+    ตัวอย่างชุดคำสั่ง
+        function name(parameter: type = default_value): return_type {
+            statement
+        }
+
+    ตัวอย่างการใช้งาน
+        function applyDiscount(price: number, discount?: number = 0.05) {
+            return price * (1 - discount);
+        }
+
+        console.log(applyDiscount(100)); // 95 
+
+        จากชุดคำสั่งดังกล่าว เราส่งไปแค่ราคาของกินค้า ไม่ได้ส่ง discount เข้าไปด้วย
+        ทำให้ parameter discount จะมีค่าเท่ากับค่าเริ่มต้นที่ตั้งไว้ (0.5)
