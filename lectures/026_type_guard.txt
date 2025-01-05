@@ -1,0 +1,22 @@
+Type Guard
+    instanceof 
+        ใช้ตรวจว่า คัวที่ถูกดำเนินการว่าเป็น instance ของคลาสที่ระบุหรือไม่
+
+        ตัวอย่างการใช้งาน
+            if (a instanceof CLASS)
+
+        ตัวอย่าง 
+
+        class Customer {}
+        class Supplier {}
+
+        type BusinessPartner = Customer | Supplier;
+
+        function signContract(partner: BusinessPartner): string {
+            // ถ้าหาก partner ที่ถูกส่งเข้ามาเป็น Customer
+            if (partner instanceof Customer) {
+
+            }
+        }
+
+https://www.typescripttutorial.net/typescript-tutorial/typescript-type-guards/
