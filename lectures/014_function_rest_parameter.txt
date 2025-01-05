@@ -1,0 +1,18 @@
+Rest Parameter
+    เป็นการทำให้ฟังก์ชันสามารถรับ parameter ได้ไม่จำกัด
+
+    ตัวอย่างชุดคสั่ง
+        function name( ...parameter: type[]): return_type {
+            statement
+        }
+
+    ตัวอย่างการใช้งาน 
+        function sum(...numbers: number[]): number {
+            return numbers.reduce((previosVal: number, currentVal: number) => previosVal + currentVal);
+        }
+
+    สามารถทำให้ rest parameter มีหลายชนิดข้อมูลได้
+    เช่น 
+        function conbine(...args: (number | string)[]): [number, string] {
+            
+        }
