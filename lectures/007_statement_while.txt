@@ -1,0 +1,26 @@
+Typescript While
+    เป็นชุดคำสั่งที่จะทำการวนซ้ำกลุ่มของชุดคำสั่งด้านใน ตามใดที่เงื่อนไขเป็นจริง
+    โดยก่อนการวนซ้ำ มันจะตรวจสอบเงื่อนไขก่อนทุกครั้ง และจะทำซ้ำอีกครั้งถ้าเงื่อนไขเป็นจริง
+
+    รูปแบบชุดคำสั่ง 
+        while (condition) {
+            statement
+        }
+
+    ตัวอย่างการใช้งาน
+        สมมุติเรามี html ดังนี้
+            <ul id="list>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+
+        เราเขียนชุดคำสั่ง typescript เพื่อทำการลบ li ทุกตัวได้ดังนี้
+            const listElement = document.getElementById("list");
+
+            while (listElement.firstChild) {
+                listElement.removeChild(list.firstChild);
+            }
+        จากคำสั่งดังกล่าว ถ้าหาก listElement มี element ลูกตัวแลก จะทำการลบออก และทำการวนซ้ำไปเรื่อย ๆ 
+        จนกว่า element ลูกจะหมด
