@@ -1,0 +1,9 @@
+Static 
+    ทำให้คุณสมบัติของคลาส สามารถถูกเรียกใช้งานได้ โดยที่ไม่ต้องสร้าง instance (new class) ใหม่
+
+    ตัวอย่างการใช้งาน
+        class Employee {
+            public static age: number = 20;
+        }
+
+        console.log(Employee.age);
