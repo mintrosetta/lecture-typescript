@@ -1,0 +1,7 @@
+Typescript Do While 
+    เหมือนกับ while ทุกประการ แต่จะดำเนินการชุดคำสั่งด้านในก่อนการตรวจสอบเงือนไข
+
+    ตัวอย่างชุดคำสั่ง
+        do {
+            statement
+        } while (condition)
